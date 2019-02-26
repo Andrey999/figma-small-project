@@ -1,0 +1,46 @@
+@import "vars.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+.wrapper {
+  width: 1270px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./media.scss";
