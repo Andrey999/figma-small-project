@@ -1,8 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
-const jquery = require('jquery');
-const moment = require('moment');
+// const jquery = require('jquery');
 const  plumber = require('gulp-plumber'); // вывод ошибок в терминал
 const cache = require('gulp-cache');  //
 const imagemin = require('gulp-imagemin'); // минификация изображений
@@ -47,8 +46,6 @@ function sassStyles() {
 
 //  записываем в переменную какие js файлы будем обрабатывать
 const jsFiles = [
-    'node_modules/moment/min/moment.min.js',
-    'node_modules/jquery/dist/jquery.js',
     './src/js/main.js'
 ];
 
