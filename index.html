@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>Small project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="build/css/style.css">
     <link rel="stylesheet" href="build/css/all.css">
 </head>
 <body>
-
 <!--  header  -->
-<header class="header">
+<header class="header" id="header">
     <div class="wrapper">
-        <nav>
+        <nav class="navigation">
             <div class="header__logo-left">
                 <a href="#">BS</a>
             </div>
@@ -45,7 +44,7 @@
         </section>
 
         <div class="main__scroll">
-            <a href="#services">scroll down</a>
+            <a href="#services" id="service" class="main__scroll-scrolling">scroll down</a>
         </div>
 
     </div>
@@ -54,12 +53,75 @@
 <!--      services    block          -->
 <section class="services" id="services">
     <div class="wrapper">
+        
         <div class="services__title">
             <p>we provide</p>
             <h2>services</h2>
         </div>
-    </div>
+
+              <ul class="services__block">
+                  <li class="services__item">
+                      <a href="#" class="services__item-hover"></a>
+                      <span class="service__item-index">01</span>
+                      <i class="services__item-icon icon icon-Starship"></i>
+                      <h3 class="services__item-title">fast startup<br>launch</h3>
+                      <span class="services__item-more">+</span>
+                  </li>
+
+                  <li class="services__item">
+                      <a href="#" class="services__item-hover"></a>
+                      <span class="service__item-index">02</span>
+                      <i class="services__item-icon icon icon-Cup"></i>
+                      <h3 class="services__item-title">awesome<br>web design</h3>
+                      <span class="services__item-more">+</span>
+                  </li>
+
+                  <li class="services__item">
+                      <a href="#" class="services__item-hover"></a>
+                      <span class="service__item-index">03</span>
+                      <i class="services__item-icon icon icon-Keyboard"></i>
+                      <h3 class="services__item-title">breathtaking<br>coding</h3>
+                      <span class="services__item-more">+</span>
+                  </li>
+
+                  <li class="services__item">
+                      <a href="#" class="services__item-hover"></a>
+                      <span class="service__item-index">04</span>
+                      <i class="services__item-icon icon icon-Headset"></i>
+                      <h3 class="services__item-title">up to date<br>support</h3>
+                      <span class="services__item-more">+</span>
+                  </li>
+              </ul>
+          </div>
+
 </section>
+
+
+<!-- footer  -->
+<footer class="footer" id="footer">
+    <div class="wrapper">
+        <div class="footer__items-wrapper">
+        <!--logo-->
+        <div class="footer__logo">
+            <a href="#">BS</a>
+        </div>
+        <!--  all rights reserved-->
+            <p class="footer__rights-reserved">2017 / all rights reserved</p>
+        <!--  button contact us  -->
+            <a href="#" class="footer__btn btn">contact us</a>
+            <!-- phone  -->
+            <a href="#" class="footer__phone">+12321453212</a>
+            <!-- email  -->
+            <a href="mailto:info@sitename.ru" class="footer__mail">info@sitename.ru</a>
+            <!--  working  time  -->
+            <p class="footer__working">Working hours: 8 am - 7 pm </p>
+            <!-- arrow  up  -->
+            <div class="footer__arrow-up">
+                <a href="#header">&uarr;</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="build/js/all.js"></script>
 </body>
