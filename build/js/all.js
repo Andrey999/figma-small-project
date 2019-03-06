@@ -1,1 +1,1 @@
-console.log("work");
+var e=document.getElementById("header__menu-burger"),l=document.getElementById("mobile-menu");e.addEventListener("click",function(){var e=document.getElementById("line-1"),t=document.getElementById("line-2"),n=document.getElementById("line-3");l.classList.toggle("mobile-menu_show"),e.classList.toggle("line-1"),t.classList.toggle("line-2-hidden"),n.classList.toggle("line-3")});

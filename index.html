@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <title>Small project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/style.css">
+    <!--<link rel="stylesheet" href="build/css/style.css">-->
     <link rel="stylesheet" href="build/css/all.css">
 </head>
 <body>
+
 <!--  header  -->
 <header class="header" id="header">
     <div class="wrapper">
         <nav class="navigation">
+            <!-- logo-left -->
             <div class="header__logo-left">
                 <a href="#">BS</a>
             </div>
-
+            <!-- logo-center -->
             <div class="header__logo-center">
                 <p>braaah</p>
             </div>
-
-            <div class="header__menu-burger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- hamburger-menu  -->
+            <div class="header__menu-burger" id="header__menu-burger">
+                <span id="line-1"></span>
+                <span id="line-2"></span>
+                <span id="line-3"></span>
             </div>
-        </nav>
 
+        </nav>
+        <!--  main text left   -->
         <section class="main__offer-left">
             <div class="main__offer-bg-text">worth</div>
             <div class="main__offer-text-left">
@@ -35,19 +38,30 @@
                 <a href="#" class="main__offer-btn btn">contact us</a>
             </div>
         </section>
-
+        <!--  main text  right   -->
         <section class="main__offer-right">
             <span>n</span>
             <span>e</span>
             <span>x</span>
             <span>t</span>
         </section>
-
+        <!--  scroll   -->
         <div class="main__scroll">
             <a href="#services" id="service" class="main__scroll-scrolling">scroll down</a>
         </div>
+    </div>  <!-- .wrapper -->
 
+    <!--mobile - menu-->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="menu__list">
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Home</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">About</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Team</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Forum</a></li>
+            <li class="menu__list-item"><a href="#" class="menu__list-link">Contacts</a></li>
+        </ul>
     </div>
+
 </header>
 
 <!--      services    block          -->
@@ -92,7 +106,7 @@
                       <span class="services__item-more">+</span>
                   </li>
               </ul>
-          </div>
+          </div>  <!-- .wrapper -->
 
 </section>
 
@@ -124,5 +138,6 @@
 </footer>
 
 <script src="build/js/all.js"></script>
+
 </body>
 </html>

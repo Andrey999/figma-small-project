@@ -5,9 +5,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
@@ -62,6 +61,7 @@ ul {
     height: 100vh;
   }
 }
+
 .header__logo-left {
   position: absolute;
   top: 6%;
@@ -106,8 +106,7 @@ ul {
   right: 0;
   top: 6%;
   cursor: pointer;
-
-
+  z-index: 10;
 
   span {
     width: 40px;
@@ -115,19 +114,71 @@ ul {
     display: block;
     background: #fff;
     margin-bottom: 6px;
+    transition: .4s ease;
 
-    &:hover {
-      width: 40px;
+    &:nth-child(1) {
+
+      &.line-1 {
+        width: 40px;
+        transform: translateX(21px) translateY(3px) rotateZ(133deg);
+      }
     }
 
     &:nth-child(2) {
       width: 30px;
       margin-left: 10px;
+
+      &.line-2-hidden {
+        display: none;
+      }
     }
     &:nth-child(3) {
       width: 19px;
       margin-left: 21px;
+
+      &.line-3 {
+        width: 40px;
+        transform: translateX(0px) translateY(-5px) rotateZ(-137deg);
+
+      }
     }
+  }
+}
+
+//  mobile menu
+.mobile-menu {
+  background: rgba(100, 110, 250, .9);
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 1600px;
+  transition: .2s ease;
+}
+
+.mobile-menu_show {
+  left: 0;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 70px 60px;
+}
+
+.menu__list-item {
+  padding-bottom: 50px;
+}
+
+.menu__list-link {
+  font-size: 20px;
+  color: #0000FF;
+  font-weight: bold;
+
+  &:hover {
+    color: lighten(#0000FF, 10%);
   }
 }
 
@@ -208,6 +259,7 @@ ul {
     }
   }
 }
+
 // main scroll
 .main__scroll {
   position: absolute;
@@ -229,16 +281,9 @@ ul {
   }
 }
 
-a[ id="service" ]:target ~ #services ul.services__block {
-  -webkit-transform: translateY( 300px);
-  transform: translateY( 300px );
-}
-
-
 //  section  services
 .services {
   background: #fff;
-  //box-shadow: 0 10px 10px 0 #fff;
 }
 
 .services__title {
@@ -260,7 +305,6 @@ a[ id="service" ]:target ~ #services ul.services__block {
       content: '';
       display: block;
       position: absolute;
-      //top: 0;
       left: 350px;
       width: 39px;
       height: 4px;
@@ -268,6 +312,7 @@ a[ id="service" ]:target ~ #services ul.services__block {
     }
   }
 }
+
 //  services__block
 .services__block {
   display: flex;
@@ -410,17 +455,6 @@ a[ id="service" ]:target ~ #services ul.services__block {
     background: darken(#ededf8, 10%);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @import "./media.scss";
