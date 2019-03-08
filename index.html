@@ -35,7 +35,7 @@
             <div class="main__offer-text-left">
                 <h2>we create<br>the bright future</h2>
                 <p>you can order the best web site you've ever seen. Seriously</p>
-                <a href="#" class="main__offer-btn btn">contact us</a>
+                <a href="#" class="main__offer-btn btn" id="main__offer-btn">contact us</a>
             </div>
         </section>
         <!--  main text  right   -->
@@ -60,6 +60,21 @@
             <li class="menu__list-item"><a href="#" class="menu__list-link">Forum</a></li>
             <li class="menu__list-item"><a href="#" class="menu__list-link">Contacts</a></li>
         </ul>
+    </div>
+    <!--  window    modal   form   -->
+    <div class="modal" id="modal">
+        <form class="form">
+            <div class="form__block">
+                <label for="name">Имя: </label><input type="text" id="name" required>
+                <label for="email">Email: </label><input type="text" id="email" required>
+                <label for="tel">Телефон: </label><input type="text" id="tel" required>
+            </div>
+            <button class="form__block-btn btn" id="form__block-btn">Отправить</button>
+        </form>
+        <span id="form__block-close" class="form__block-close">&#10006;</span>
+        <div class="form__block-feedback" id="form__block-feedback">
+            <p class="feedback-text">Спасибо Ваши данные сохранены</p>
+        </div>
     </div>
 
 </header>
