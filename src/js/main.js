@@ -16,8 +16,10 @@ function openMenu() {
 
 
 //   add form
-let contactUs = document.getElementById('main__offer-btn');
-contactUs.addEventListener('click', addModal);
+let contactUs = document.querySelectorAll('.js-btn');
+contactUs.forEach(item=>{
+    item.addEventListener('click', addModal);
+});
 
 function addModal() {
     let modal = document.getElementById('modal');
